@@ -24,16 +24,16 @@ STATIC_DIR=os.path.join(BASE_DIR,'basic_app/static')
 SECRET_KEY = 'n$ws+lf19lt1oh#ql9ddkq(5ps*73+e!0$ohsub1tm4un2^1op'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
